@@ -66,3 +66,36 @@ mvn deploy: Deploys the package to a remote repository.
 mvn site: Generates project documentation and reports.
 mvn site-deploy: Deploys the generated documentation to a remote web server.
 mvn clean: Executes the clean phase, deleting any previous build outputs.
+
+---------------------------------------------------------------------------
+
+Installation steps:
+sudo su
+sudo apt update
+sudo apt install maven -y
+mvn -version
+
+install jdk11 as in application jdk11 is used as mentioned in pom file
+sudo apt install openjdk-11-jdk -y
+java -version
+
+clone the project repo on server:
+git clone <project_https_link_here>
+
+mvn validate
+mvn compile 
+After compile target folder will be created.
+mvn test   (to run test cases)
+mvn package  (creates artifacts in the jar/war format)
+mvn install (builds/installs package in local repository)
+mvn clean package (if we want to create new artifact each time)
+
+how to execute a java project:
+For this we need to execute the jar file (java -jar <location_of_jarfile>):
+java -jar target/spring-boot-web.jar   (on the base level/root level this command is executing/running in background even with docker, k8s.)
+
+
+
+
+
+
