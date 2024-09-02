@@ -1,5 +1,7 @@
 1. Proxy
-A proxy server acts as an intermediary between a client and the server from which the client is requesting a service. It forwards client requests to the appropriate server and then sends the server's response back to the client. Proxies are often used to improve security, performance, and reliability.
+A proxy server acts as an intermediary between a client and the server from which the client is requesting a service. 
+It forwards client requests to the appropriate server and then sends the server's response back to the client. 
+Proxies are often used to improve security, performance, and reliability.
 
 Applications:
 Anonymity: Clients can mask their IP address by using a proxy server, enhancing privacy.
